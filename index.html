@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diwash Bhatta's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #fff3e0;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #b71c1c;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      animation: slideIn 1s ease-out;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      background-color: #f57f17;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeIn 1s ease-in-out 0.5s forwards;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #e65100;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .section {
+      margin: 1rem 0;
+      animation: fadeUp 0.8s ease-out;
+    }
+    .section h2 {
+      color: #b71c1c;
+      border-bottom: 2px solid #b71c1c;
+      margin-bottom: 1rem;
+    }
+    .about-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .about-section img {
+      width: 160px;
+      border-radius: 10px;
+      border: 4px solid #f57f17;
+      flex-shrink: 0;
+    }
+    .about-section p {
+      flex: 1;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .section ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .contact-line {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .contact-line p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #b71c1c;
+      color: #fff;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .contact-line {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Network and System Engineer | DevOps Enthusiast</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <div class="about-section">
+        <img src="images/profile.jpg" alt="Diwash Bhatta" />
+        <p>
+          I am Diwash Bhatta, highly skilled Network and System Engineer with expertise in automation, and network infrastructure. Experienced in designing and managing CI/CD pipelines, system administration, and containerized applications using Docker and Kubernetes. Proficient in virtualization technologies, and security best practices to optimize system performance and reliability. Passionate about automating workflows, enhancing system efficiency, and driving innovation through DevOps methodologies. Committed to continuous learning and pursuing advanced certifications in cloud and cybersecurity.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Cloud: AWS, Azure</li>
+        <li>DevOps: Docker, Kubernetes, Jenkins, CI/CD, Git, Github</li>
+        <li>Systems: Linux (RHEL, Ubuntu), Windows Server</li>
+        <li>Networking: DNS,DHCP,AAA,BGP,MPLS,VPN,VLAN</li>
+        <li>Security: Fortinet, Sophos, pfSense</li>
+        <li>Monitoring: Zabbix, Nagios, Cacti</li>
+        <li>Automation: Bash, Python</li>
+      </ul>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <h3>System & Network Manager – Beyondtech Nepal (2025–Present)</h3>
+      <ul>
+		<li>Analyzed client requirements and designed tailored network and hybrid-cloud solutions, including SD-WAN, advanced firewall configurations, and multi-cloud architectures using AWS and Microsoft Azure</li>
+        <li>Architected cloud solutions with AWS, Azure & SD-WAN</li>
+        <li>Deployed containerized systems using Docker, EKS, ECS</li>
+        <li>Supervised field engineers and conducted POCs</li>
+      </ul>
+      <h3>System Engineer – Vianet Communications Ltd(2022–2025)</h3>
+      <ul>
+        <li>Built CI/CD pipelines and deployed scalable infrastructure</li>
+        <li>Managed on-premises and cloud environments</li>
+        <li>Ensured performance with monitoring tools like Zabbix</li>
+      </ul>
+      <h3>Corporate Solution Engineer - Vianet Communications Ltd (2018–2022)</h3>
+      <ul>
+        <li>Delivered L2/L3 internet services to corporate clients</li>
+        <li>Configured BGP/MPLS/VPLS and managed firewall devices</li>
+      </ul>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>BSc.IT – Himalayan University, India (2014–2017)</li>
+        <li>+2 – National College of Computer Studies, Nepal (2009–2011)</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-line">
+        <p><strong>Phone:</strong> +9779808016008</p>
+        <p><strong>Email:</strong> <a href="mailto:diw.bht@gmail.com">diw.bht@gmail.com</a></p>
+        <p><strong>Location:</strong> Kathmandu, Nepal</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>&copy; 2025 Diwash Bhatta. All rights reserved.</footer>
+</body>
+</html>
